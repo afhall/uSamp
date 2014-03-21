@@ -42,7 +42,8 @@ function usamp_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'usamp' ),
+		'header' => __( 'Header Menu', 'usamp' ),
+        'footer' => __( 'Footer Menu', 'usamp' )
 	) );
 
 	// Enable support for Post Formats.

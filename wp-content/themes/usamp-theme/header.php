@@ -17,7 +17,7 @@
     
 <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7098072/679604/css/fonts.css" />
 <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7098072/757384/css/fonts.css" />
-
+    
 <?php wp_head(); ?>
 </head>
 
@@ -40,7 +40,7 @@
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'usamp' ); ?></h1>
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'usamp' ); ?></a>
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

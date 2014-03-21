@@ -7,16 +7,19 @@
  * @package usamp
  */
 ?>
-
+            
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'usamp' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'usamp' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'usamp' ), 'usamp', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="container-fluid site-info">
+            <div class="collapse navbar-collapse visible-sm visible-md visible-lg">
+                <ul class="nav navbar-nav">
+                    <?php wp_nav_menu( array( 'theme_location' => 'footer', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
