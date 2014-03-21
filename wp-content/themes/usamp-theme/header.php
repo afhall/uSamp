@@ -18,6 +18,13 @@
 <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7098072/679604/css/fonts.css" />
 <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7098072/757384/css/fonts.css" />
     
+<script src="<?php bloginfo('template_directory');?>/js/jquery.sticky.js"></script>
+<script>
+    jQuery(document).ready(function(){
+        jQuery(".sub_nav").sticky({topSpacing:0});
+    });
+</script>
+    
 <?php wp_head(); ?>
 </head>
 
